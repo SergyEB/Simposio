@@ -1,0 +1,336 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 jun 2024, 22:48:04
+    Author     : sergi
+*/
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables de fuente */
+:root {
+    --font-cormorant-garamond: 'Cormorant Garamond', serif;
+    --font-chivo: 'Chivo', sans-serif;
+}
+
+/* Estilo general */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--font-chivo), sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px 30px 20px; 
+}
+
+.ucrlogo {
+    width: 250px;
+    height: 117px;
+}
+
+.cielogo, .info-img {
+    margin-top: 17px;
+    width: 305px;
+    height: 83px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #2e568a;
+    padding: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 15px;
+    position: relative;
+}
+
+nav a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    border-right: 2px solid white;
+}
+
+#title-page p {
+    font-size: 18px; /* Tamaño de letra deseado para el párrafo */
+}
+
+
+/* Footer */
+footer {
+    background-color: #2e568a;
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+}
+
+footer nav {
+    margin-left: auto;
+    justify-content: flex-end;
+    width: auto;
+}
+
+footer nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Títulos */
+h1 {
+    font-family: var(--font-cormorant-garamond), serif;
+    font-size: 2.8em;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.35em;
+}
+
+/* Main y secciones */
+main {
+    flex: 1;
+}
+
+section {
+    padding: 16px;
+}
+
+.ponentes-title {
+    margin-top: 35px;
+}
+
+.container-title {
+    height: 250px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-background {
+    background-color: #2e568a;
+    color: white;
+}
+
+.schedule {
+    padding-bottom: 32px;
+    background-color: #2e568a;
+}
+
+.shchedule-title {
+    color: #ffffff;
+}
+
+.container-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.informacion {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.text-content{
+    padding-left: 200px;
+}
+
+.section-light {
+    background-color: #f7fafc;
+}
+
+.container-schedule {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-container {
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contactus {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 55px;
+}
+
+/* Clases adicionales */
+.text-center {
+    text-align: center;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 32px;
+}
+
+.ml-200 {
+    margin-left: 200px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button-outline {
+    background: none;
+    border: 1px solid currentColor;
+}
+
+.card {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0px 10px 10px;
+}
+
+.button-container button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+}
+
+.button-container button:hover {
+    background-color: #b165b4;
+    transition-duration: 1s;
+}
+
+.columnaDosInfo {
+    padding: 0px 70px 0px 0px;
+    justify-content: left;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="lastName"],
+input[type="phoneNumber"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
